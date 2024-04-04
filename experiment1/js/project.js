@@ -71,7 +71,7 @@ function main() {
       "wooden clogs",
     ],
     herbs: ["roses", "violets", "tulips"],
-    decision: ["Luckily for you I love flowers of any kind! Please enter", "Unfortunately for you I hate flowers of any kind! Go back from which you came!"],
+    decision: ["Luckily for you I love flowers of any kind! Please enter.", "Unfortunately for you I hate flowers of any kind! Go back from which you came!"],
     number: [52, 4, 632, 101, 28, 5, 11, 7, 9999, 87, 42, 3, 6, 8],
   };
   
