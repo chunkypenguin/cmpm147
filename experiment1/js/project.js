@@ -44,21 +44,17 @@ function main() {
       "eggs",
       "cabbage heads",
     ],
-    household: ["books", "wax candles", "lutes", "wool blankets", "maps", "keys"],
-    tools: [
-      "shovels",
-      "axes",
-      "hammers",
-      "hand saws",
-      "chisels",
-      "swords",
-      "shields",
-      "arrows",
-      "daggers",
-      "maces",
-      "crossbows",
-      "longbows",
-      "spears",
+    weapons: ["axes", "great swords", "short swords", "daggers", "crossbows", "spears", "maces", "longbows"],
+    potions: [
+      "healing potions",
+      "potions of stength",
+      "potions of invisibility",
+      "charm potions",
+      "mana potions",
+      "fire potions",
+      "shock potions",
+      "frost potions",
+      "stamina potions",
     ],
     apparel: [
       "pairs of shoes",
@@ -70,9 +66,11 @@ function main() {
       "boots",
       "wooden clogs",
     ],
-    herbs: ["roses", "violets", "tulips"],
-    decision: ["Luckily for you I love flowers of any kind! Please enter.", "Unfortunately for you I hate flowers of any kind! Go back from which you came!"],
-    number: [52, 4, 632, 101, 28, 5, 11, 7, 9999, 87, 42, 3, 6, 8],
+    flowers: ["roses", "violets", "tulips", "daisys",],
+    decision: ["Luckily for you I love flowers! Please enter.", "Unfortunately for you I hate food! Go back from which you came!",
+    "Luckily for you I love weapons! Please enter.", "Unfortunately for you I hate apparel! Go back from which you came!",
+    "Luckily for you I love potions! Please enter."],
+    number: [52, 4, 632, 101, 28, 5, 11, 7, 9999, 87, 42, 3, 6, 8, 33, 1337],
   };
   
   const template = `$greeting!
@@ -82,10 +80,10 @@ function main() {
     Let's see what what you have here...
     
     $number $food,
-    $number $household,
-    $number $tools,
+    $number $weapons,
+    $number $potions,
     $number $apparel,
-    and $number $herbs...
+    and $number $flowers...
     
     That's quite the load you're carrying. 
     
