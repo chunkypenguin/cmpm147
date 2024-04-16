@@ -53,6 +53,12 @@ canvas {
   margin-top: 0.25em;
 }
 
+.generate-box {
+  display: flex;
+  justify-content: flex-start; /* Aligns the button to the right */
+  margin-top: 0.25em;
+}
+
 .fullscreen-box button {
   font-size: 0.6em;
 }

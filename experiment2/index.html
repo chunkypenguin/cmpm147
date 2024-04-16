@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 2 - Livings Impressions</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -32,25 +32,36 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 2 - Living Impressions</h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
 					<!-- canvas will be added here -->
 				</div>
-                <div class="fullscreen-box">
+                <div class="generate-box">
+                    <button id="clicker">Generate</button>
+                </div>
+				<div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
                 </div>
 			</div>
 
 			<div class="minor-section">
+				<h2>Reference Image</h2>
+				<div class="image-wrapper">
+					<img class="cat-photo" src="./img/landscape.png">
+				</div>
+				<p>Image made by <a href="https://www.reddit.com/r/DigitalPainting/comments/15rcinx/how_can_i_improve_on_creating_stylized_landscapes/" target="_new">wombmates</a></p>
+			</div>
+
+			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>Created a generator that creates a living impression based on a piece of landscape art.</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>Utilizes for loops and noise to randomly generated terrain within draw(), filling their shape with a color variable. Flowers are created with a nested for loop, creating multiple instances of flower patterns. These flowers, and additionaly the sun and clouds, move on their X axis and are influenced by mouse input.</p>
 			</div>
 
 			<div class="minor-section">
